@@ -1,1 +1,58 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  color: #100f10;
+}
+
+header {
+  margin: 0 5%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+header .logo {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+header .logo .logo1 {
+  color: #8dc728;
+}
+header .logo .logo2 {
+  color: #ce2020;
+}
+header .menu {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  margin: 0;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.content .pitch {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.content .meals {
+  flex-grow: 3;
+  display: flex;
+  justify-content: space-between;
+}
+.content .meals img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: #100f10;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
