@@ -1,58 +1,111 @@
 body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/so-white.png");
+  background-color: #e0e0e0;
+}
+
+body, * {
   margin: 0;
-  color: #100f10;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  margin: 0 5%;
+  padding: 2.5% 5%;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  position: relative;
+  background-color: white;
 }
 header .logo {
   flex-grow: 2;
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
 }
-header .logo .logo1 {
-  color: #8dc728;
-}
-header .logo .logo2 {
+header .logo .l1 {
   color: #ce2020;
+  font-weight: 1000;
 }
-header .menu {
+header .logo .l2 {
+  color: #8dc728;
+  font-weight: 1000;
+}
+header .nav {
   flex-grow: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: last baseline;
+}
+header .nav a {
+  text-decoration: none;
+  color: #100f10;
+  font-size: 16px;
 }
 
 .content {
-  margin: 0;
-  background-color: #e0e0e0;
   display: flex;
+  padding: 2.5% 5%;
   justify-content: space-between;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  align-content: center;
 }
-.content .pitch {
+
+.left {
+  display: flex;
+  flex-flow: column wrap;
   flex-grow: 1;
-  display: flex;
-  flex-flow: column;
   justify-content: center;
+  width: 20%;
+  padding-right: 5%;
 }
-.content .meals {
-  flex-grow: 3;
+.left h1 {
+  line-height: 100%;
+  font-size: 64px;
+  font-weight: 900;
+}
+.left p {
+  font-size: 24px;
+}
+.left a {
+  text-decoration: none;
+  color: #100f10;
+  font-weight: bold;
+}
+.left * {
+  padding: 2.5% 0;
+}
+
+.right {
   display: flex;
   justify-content: space-between;
+  flex-grow: 2;
 }
-.content .meals img {
-  width: 200px;
-  height: 300px;
+.right .food {
+  display: flex;
+  position: relative;
+}
+.right .food img {
+  width: 300px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-a {
-  color: #100f10;
-  text-decoration: none;
+.right .food h5 {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 2.5%;
+}
+.right .food .adjc {
+  width: 33%;
+  background-color: white;
+  bottom: 25.2px;
+}
+.right .food .noun {
+  width: 50%;
+  background-color: #8dc728;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
